@@ -70,8 +70,6 @@ class Decision_Tree():
 
     def build_classifier_tree(self, dataset, curr_depth=0):
 
-        #note dataset is a a pandas dataframe
-
         features = dataset[:, :-1]
         targets = dataset[:,-1]
         num_samples, num_features = np.shape(features)
